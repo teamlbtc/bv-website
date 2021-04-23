@@ -1,0 +1,132 @@
+<footer class="black">
+    <div class="footer-container">
+        <div class="container">
+            <div class="row">
+                <div class="footer-content">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb">
+                        <div class="footer-about-info">
+                            <h4> About Us </h4>
+                            <p> BV is a platform to all "Clean Bengaluru" visioned non-profit organisations to solve their community problems. 
+                                It runs on the combined effort of organisations and residents of Bengaluru. 
+                                BV enables, empowers and enlightens citizens to come together with all stakeholders to report and solve problems. </p>
+                            <ul>
+                                <li><i class="icon-location-1"></i>
+                                    <span>Bengaluru, Karnataka, India</span></li>
+                                <li><i class="icon-phone"></i>
+                                    <span>Phone : <a href="tel:9353218818" style='color: red'>&nbsp9353218818</a></span></li>
+                                <li><i class="icon-mail"></i>
+                                    <span>Email : <a href="mailto:contactus@bengaluruveeraru.org" style='color: red'>&nbspcontactus@bengaluruveeraru.org</a></span></li>
+                            </ul>
+                        </div>
+                        <div class="social-link footer-social-link">
+                            <ul>
+                                <li><a href="https://twitter.com/blr_veeraru" target="_blank" class="circle c-1"><i
+                                        class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/bengaluruveeraru/" target="_blank" class="circle c-2"><i
+                                        class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://instagram.com/bengaluru_veeraru" target="_blank" class="circle c-3"><i
+                                        class="fa fa-instagram"></i></a></li>
+                                <!-- <li><a href="https://vimeo.com/" class="circle c-4"><i class="fa fa-youtube"></i></a></li> -->
+                            </ul>
+                        </div> <!-- footer-social-link -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb">
+                        <h4> Recent Posts </h4>
+			<div class="news-1">
+				<a href="bvcertification">
+					<img src="assets/images/othersn1.png" alt="...">
+				</a>
+				<div class="news">
+					<h5 class="news-h"><a href="bvcertification">BV - Certification Program</a> </h5>
+					<p class="date">May 01, 2020</p>
+				</div>
+			</div>
+			<div class="news-2">
+				<a href="bvabout">
+					<img src="assets/images/othersn.png" alt="...">
+				</a>
+				<div class="news">
+					<h5 class="news-h"><a href="bvabout">BV - About</a> </h5>
+					<p class="date">October 19, 2019</p>
+				</div>
+			</div>
+			<div class="news-3">
+				<a href="bvnews3">
+					<img src="assets/images/othersn2.png" alt="...">
+				</a>
+				<div class="news">
+					<h5 class="news-h"><a href="bvnews3">BV – BRIDGING CHANGEMAKERS AND THE GOVERNMENT</a> </h5>
+					<p class="date">January 01, 2020</p>
+				</div>
+			</div>
+                    </div>
+                    <!-- "<?= $_SERVER['PHP_SELF'];?> -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb">
+                        <h4> Contact Us </h4>
+                        <form id="f_formInput" v-on:submit.prevent="submitData">
+                            <div class="form-group">
+                                <input id="f_first_name" type="text" placeholder="Name"
+                                       class="form-control" required="">
+                            </div>
+                            <div class="form-group">
+                                <input id="f_email" type="email" placeholder="E-mail"
+                                       class="form-control" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="f_message" class="form-control" rows="4" placeholder="Message..."></textarea>
+                            </div>
+                            <div class="form-group buttons ">
+                                <button title="Submit" type="submit" class="red-btn red-btn-form" value="Send Message">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="back-to-top">
+            <a class="top top-page" href="#"> <i class="icon-up-open-big"></i></a>
+        </div>
+        <div class="back-to-top-mob">
+            <a class="top top-mob" href="#"> <i class="icon-up-open-big"></i></a>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p class="copy-title">Copyright &copy; 2020 Bengaluru Veeraru 
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    Website By <a href="https://adithyaakrishna.github.io/" target="_blank" style='color: red'><b><img src="assets/images/Adithya.png" alt=""></b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var f_formInput = new Vue({
+            el: "#f_formInput",
+            methods: {
+                submitData: async function (event) {
+                    var first_name = document.getElementById("f_first_name").value;
+                    var email = document.getElementById("f_email").value;
+                    var message = document.getElementById("f_message").value;
+                    await firebase.firestore().collection("BV-Footer-ContactUs").add({
+                        firstName: first_name,
+                        email: email,
+                        message: message
+                    }).then(function () {
+                        document.getElementById("f_first_name").value = "";
+                        document.getElementById("f_email").value = "";
+                        document.getElementById("f_message").value = "";
+                    });
+                }
+            }
+        });
+    </script>
+</footer>
+

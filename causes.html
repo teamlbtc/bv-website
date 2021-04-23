@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bengaluru Veeraru</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/manual.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
+    <!-- Google fonts Poppins -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Fontello -->
+    <link rel="stylesheet" href="assets/css/css-fontello/animation.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello-codes.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello-embedded.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello-ie7.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello-ie7-codes.css" type="text/css"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167579043-1"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="assets/js/firebase.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167579043-1');
+</script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="page">
+
+    <!--=============================== Header ===========================-->
+    <div id="header"></div>
+
+    <!--=============================== Menu-Bar ========================-->
+    <div id="menuBar-charity"></div>
+
+    <!--=============================== Banner ==========================-->
+    <div class="banner">
+        <div class="shadow-main">
+            <h1> Our Causes </h1>
+            <ul class="breadcrumb breadcrumb-news">
+                <li><a href="index">HOME</a></li>
+                <li><a href="our-causes">OUR CAUSES</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--=============================== Our causes ================================-->
+    <div class="main-causes">
+        <div class="causes-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="tabs">
+                            <li class="active"><a href="#">General</a></li>
+                            <li><a href="#">Child Protection</a></li>
+                            <li><a href="#">Health Care</a></li>
+                            <li><a href="#">Hunger</a></li>
+                            <li><a href="#">Human Rights</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-4 col-sm-6 col-xs-12 mb-causes center-causes">
+                        <div class="person-img">
+                            <a href="single-causes" class="img-link">
+                                <span><i class="icon-eye" aria-hidden="true"></i></span>
+                                <img src="http://via.placeholder.com/370x300" alt="causes1">
+                            </a>
+                        </div>
+                        <div class="person-card ">
+                            <div class="person-content">
+                                <h3><a href="single-causes" class="title-white">Children's Health Fund</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et... </p>
+                            </div>
+                        </div>
+                        <div class="scale-area">
+                            <h6>Raised</h6>
+                            <h6 class="pull-right">Goal</h6>
+                            <div class="scale clearfix">
+                                <div class="scale-bar-1" data-percent="43"></div>
+                                <div class="scale-bar-percent">43%</div>
+                            </div>
+                            <h6>5730.00 USD</h6>
+                            <h6 class="pull-right">112000.00 USD</h6>
+                        </div>
+                        <div class="buttons">
+                            <a href="single-causes" class=" red-btn red-btn-4">Donate</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 mb-causes center-causes">
+                        <div class="person-img">
+                            <a href="single-causes" class="img-link">
+                                <span><i class="icon-eye" aria-hidden="true"></i></span>
+                                <img src="http://via.placeholder.com/370x300" alt="causes3">
+                            </a>
+                        </div>
+                        <div class="person-card ">
+                            <div class="person-content">
+                                <h3><a href="single-causes" class="title-white">Education to Every Child</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et... </p>
+                            </div>
+                        </div>
+                        <div class="scale-area">
+                            <h6>Raised</h6>
+                            <h6 class="pull-right">Goal</h6>
+                            <div class="scale clearfix">
+                                <div class="scale-bar-1" data-percent="86"></div>
+                                <div class="scale-bar-percent">86%</div>
+                            </div>
+                            <h6>5730.00 USD</h6>
+                            <h6 class="pull-right">112000.00 USD</h6>
+                        </div>
+                        <div class="buttons">
+                            <a href="single-causes" class=" red-btn red-btn-4">Donate</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 mb-causes center-causes">
+                        <div class="person-img">
+                            <a href="single-causes" class="img-link">
+                                <span><i class="icon-eye" aria-hidden="true"></i></span>
+                                <img src="http://via.placeholder.com/370x300" alt="causes2">
+                            </a>
+                        </div>
+                        <div class="person-card ">
+                            <div class="person-content">
+                                <h3><a href="single-causes" class="title-white">Cancer Research Institute</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et... </p>
+                            </div>
+                        </div>
+                        <div class="scale-area">
+                            <h6>Raised</h6>
+                            <h6 class="pull-right">Goal</h6>
+                            <div class="scale clearfix">
+                                <div class="scale-bar-1" data-percent="62"></div>
+                                <div class="scale-bar-percent">62%</div>
+                            </div>
+                            <h6>5730.00 USD</h6>
+                            <h6 class="pull-right">112000.00 USD</h6>
+                        </div>
+                        <div class="buttons">
+                            <a href="single-causes" class=" red-btn red-btn-4">Donate</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 mb-causes center-causes left-clear">
+                        <div class="person-img">
+                            <a href="single-causes" class="img-link">
+                                <span><i class="icon-eye" aria-hidden="true"></i></span>
+                                <img src="http://via.placeholder.com/370x300" alt="causes6">
+                            </a>
+                        </div>
+                        <div class="person-card ">
+                            <div class="person-content">
+                                <h3><a href="single-causes" class="title-white">Food for the Hungry </a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et... </p>
+                            </div>
+                        </div>
+                        <div class="scale-area">
+                            <h6>Raised</h6>
+                            <h6 class="pull-right">Goal</h6>
+                            <div class="scale clearfix">
+                                <div class="scale-bar-1" data-percent="43"></div>
+                                <div class="scale-bar-percent">43%</div>
+                            </div>
+                            <h6>5730.00 USD</h6>
+                            <h6 class="pull-right">112000.00 USD</h6>
+                        </div>
+                        <div class="buttons">
+                            <a href="single-causes" class=" red-btn red-btn-4">Donate</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 mb-causes center-causes">
+                        <div class="person-img">
+                            <a href="single-causes" class="img-link">
+                                <span><i class="icon-eye" aria-hidden="true"></i></span>
+                                <img src="http://via.placeholder.com/370x300" alt="causes5">
+                            </a>
+                        </div>
+                        <div class="person-card ">
+                            <div class="person-content">
+                                <h3><a href="single-causes" class="title-white">Action Against Hunger-USA</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et... </p>
+                            </div>
+                        </div>
+                        <div class="scale-area">
+                            <h6>Raised</h6>
+                            <h6 class="pull-right">Goal</h6>
+                            <div class="scale clearfix">
+                                <div class="scale-bar-1" data-percent="86"></div>
+                                <div class="scale-bar-percent">86%</div>
+                            </div>
+                            <h6>5730.00 USD</h6>
+                            <h6 class="pull-right">112000.00 USD</h6>
+                        </div>
+                        <div class="buttons">
+                            <a href="single-causes" class=" red-btn red-btn-4">Donate</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 mb-causes center-causes">
+                        <div class="person-img">
+                            <a href="single-causes" class="img-link">
+                                <span><i class="icon-eye" aria-hidden="true"></i></span>
+                                <img src="http://via.placeholder.com/370x300" alt="causes4">
+                            </a>
+                        </div>
+                        <div class="person-card ">
+                            <div class="person-content">
+                                <h3><a href="single-causes" class="title-white">Healthy Food for Everyone</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et... </p>
+                            </div>
+                        </div>
+                        <div class="scale-area">
+                            <h6>Raised</h6>
+                            <h6 class="pull-right">Goal</h6>
+                            <div class="scale clearfix">
+                                <div class="scale-bar-1" data-percent="61"></div>
+                                <div class="scale-bar-percent">61%</div>
+                            </div>
+                            <h6>5730.00 USD</h6>
+                            <h6 class="pull-right">112000.00 USD</h6>
+                        </div>
+                        <div class="buttons">
+                            <a href="single-causes" class=" red-btn red-btn-4">Donate</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 mb-causes center-causes left-clear">
+                        <div class="person-img">
+                            <a href="single-causes" class="img-link">
+                                <span><i class="icon-eye" aria-hidden="true"></i></span>
+                                <img src="http://via.placeholder.com/370x300" alt="causes4">
+                            </a>
+                        </div>
+                        <div class="person-card ">
+                            <div class="person-content">
+                                <h3><a href="single-causes" class="title-white">Educational Institutes</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et... </p>
+                            </div>
+                        </div>
+                        <div class="scale-area">
+                            <h6>Raised</h6>
+                            <h6 class="pull-right">Goal</h6>
+                            <div class="scale clearfix">
+                                <div class="scale-bar-1" data-percent="43"></div>
+                                <div class="scale-bar-percent">43%</div>
+                            </div>
+                            <h6>5730.00 USD</h6>
+                            <h6 class="pull-right">112000.00 USD</h6>
+                        </div>
+                        <div class="buttons">
+                            <a href="single-causes" class=" red-btn red-btn-4">Donate</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 mb-causes center-causes">
+                        <div class="person-img">
+                            <a href="single-causes" class="img-link">
+                                <span><i class="icon-eye" aria-hidden="true"></i></span>
+                                <img src="http://via.placeholder.com/370x300" alt="causes4">
+                            </a>
+                        </div>
+                        <div class="person-card ">
+                            <div class="person-content">
+                                <h3><a href="single-causes" class="title-white">Save the Children</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et... </p>
+                            </div>
+                        </div>
+                        <div class="scale-area">
+                            <h6>Raised</h6>
+                            <h6 class="pull-right">Goal</h6>
+                            <div class="scale clearfix">
+                                <div class="scale-bar-1" data-percent="86"></div>
+                                <div class="scale-bar-percent">86%</div>
+                            </div>
+                            <h6>5730.00 USD</h6>
+                            <h6 class="pull-right">112000.00 USD</h6>
+                        </div>
+                        <div class="buttons">
+                            <a href="single-causes" class=" red-btn red-btn-4">Donate</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 mb-causes center-causes">
+                        <div class="person-img">
+                            <a href="single-causes" class="img-link">
+                                <span><i class="icon-eye" aria-hidden="true"></i></span>
+                                <img src="http://via.placeholder.com/370x300" alt="causes4">
+                            </a>
+                        </div>
+                        <div class="person-card ">
+                            <div class="person-content">
+                                <h3><a href="single-causes" class="title-white">Kids playground</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et... </p>
+                            </div>
+                        </div>
+                        <div class="scale-area">
+                            <h6>Raised</h6>
+                            <h6 class="pull-right">Goal</h6>
+                            <div class="scale clearfix">
+                                <div class="scale-bar-1" data-percent="62"></div>
+                                <div class="scale-bar-percent">62%</div>
+                            </div>
+                            <h6>5730.00 USD</h6>
+                            <h6 class="pull-right">112000.00 USD</h6>
+                        </div>
+                        <div class="buttons">
+                            <a href="single-causes" class=" red-btn red-btn-4">Donate</a>
+                        </div>
+                    </div>
+                </div> <!--  /.row -->
+
+                <!--======================= Pagination ========================-->
+                <nav class="pagination-1">
+                    <ul>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#"><i class="icon-right-open-mini" aria-hidden="true"></i></a></li>
+                    </ul>
+                </nav> <!-- /.Pagination -->
+            </div> <!--  /.container -->
+        </div> <!--  /.causes-2 -->
+    </div> <!--  /.main-causes -->
+
+    <!--=============================== Footer ===========================-->
+    <div id="footer"></div>
+
+</div> <!--  /.page -->
+
+<!-- JS code -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="assets/js/jquery.spincrement.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/scrollBar.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/myScript.js"></script>
+
+</body>
+</html>

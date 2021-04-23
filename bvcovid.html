@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bengaluru Veeraru</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/manual.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
+    <!-- Google fonts Poppins -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Fontello -->
+    <link rel="stylesheet" href="assets/css/css-fontello/animation.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello-codes.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello-embedded.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello-ie7.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/css-fontello/fontello-ie7-codes.css" type="text/css"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167579043-1"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="assets/js/firebase.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167579043-1');
+</script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+
+            google.charts.load('current', { packages: ['corechart', 'bar'] });
+            google.charts.setOnLoadCallback(drawMultSeries);
+
+            function drawMultSeries() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Genre', 'Total Number of People Were Given Ration ', ' ', { role: 'annotation' }],
+                    ['Bommanahalli Zone', , , ''],
+                    ['East Zone', 1001, 0, ''],
+                    ['Darasahalli Zone', , 0, ''],
+                    ['Mahadevpura Zone', , 0, ''],
+                    ['Rajarajashweri Nagar Zone', , 0, ''],
+                    ['South Zone', 7249, 0, ''],
+                    ['West Zone', 301, 0, ''],
+                    ['Yelahanka Zone', , 0, '']
+                ]);
+
+                var options = {
+                    legend: { position: 'top', maxLines: 8 },
+                    bar: { groupWidth: '75%' },
+                    colors: ['green', ''],
+                    isStacked: true
+                };
+                var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            }
+        </script>
+
+</head>
+<body>
+<div class="page page-single">
+
+    <!--=============================== Header ===========================-->
+    <div id="header"></div>
+
+    <!--=============================== Menu-Bar ========================-->
+    <div id="menuBar-charity"></div>
+
+    <!--=============================== Page Title ==========================-->
+    <div class="banner-single"></div>
+
+    <div class="container ">
+
+        <div class="title-single">
+            <h1> Bengaluru Veeraru stands to #FightCOVID19</h1>
+            <ul class="breadcrumb breadcrumb-single">
+                <li><a href="index">HOME</a></li>
+                <li><a href="news">OUR NEWS</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-6">
+                <div class="main-post">
+
+                    <!--====================== Main Post =======================-->
+                    <div class="post-single">
+                        <div class="person-card post-single-cont">
+                            <div class="person-img">
+                                <a href="news" class="img-link">
+                                    <img src="assets/images/bvcovid.png" alt="medium-2">
+                                </a>
+                            </div>
+                            <div class="person-content fontpsize">
+                                <ul class="gb-list">
+                                    <li>
+                                        <a href="news"> May 10, 2020 </a>
+                                    </li>
+                                    <li>
+                                        <a href="news"><i class="icon-eye" aria-hidden="true"></i>
+                                            118 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#author"> by Author</a>
+                                    </li>
+                                </ul>
+                                <p>Bengaluru Veeraru team hosted a internal discussion with the officials of BBMP & Bengaluru City Police to understand all the ground challenges.
+                                    After the discussion, Bengaluru Veeraru team called out all the NGOs registered in the BV platform for an online meeting in the third week of March 
+                                    and discussed how everyone could join hands and fight the pandemic in Namma Bengaluru.
+                                </p>
+                                <p>After the brainstorming discussion with all the NGOs, BV took forward these initiatives: </p>
+                                <p>
+                                    <ul class="needylistx">
+                                        <li>1. Research & documentation of FAQs of COVID19</li>
+                                        <li>2. Awareness in communities</li>
+                                        <li>3. Making Bengaluru Accessible by:
+                                            <ul class="needylista">
+                                                <li>a. Mapping Essential Stores (Grocery, Provision, Utility shops).</li>
+                                                <li>b. Mapping Needy (Real Time Monitoring).</li>
+                                                <li>c. Mapping Containment Area</li>
+                                                <li>d. Mapping DCP – South Division</li>
+                                                <li>e. Mapping DCP – Central Division</li>
+                                            </ul>
+                                        </li>
+                                        <li>4. Assistance in Police Stations:
+                                            <ul class="needylistb">
+                                                <li>a. Food & Ration Distribution.</li>
+                                                <li>b. Vehicle Monitoring.</li>
+                                                <li>c. Police Station Documentation Support.</li>
+                                                <li>d. Volunteer & Donor Management.</li>
+                                                <li>e. Containment Area Management.</li>
+                                            </ul>
+                                        </li>
+                                        <li>5. BBMP South Zone:
+                                            <ul class="needylistc">
+                                                <li>a. Food & Ration Supply Management.</li>
+                                                <li>b. Private Donor Management.</li>
+                                            </ul>
+                                        </li>
+                                        <li>6. Ration Supply Team:
+                                            <ul class="needylistd">
+                                                <li>a. Sourcing Ration Kits from Partners</li>
+                                                <li>b. Distribution to Needy through identified Partners</li>
+                                                <li>c. Distribution to Needy who reached out to BV</li>
+                                                <li>d. Distribution to Police Stations</li>
+                                            </ul>
+                                        </li>
+                                        <li>7. Kannada Translators Team
+                                            <ul class="needyliste">
+                                                <li>a. Converting Kannada documents to English.</li>
+                                            </ul>
+                                        </li>
+                                        <li>8. BV Tech Team:
+                                            <ul class="needylistf">
+                                                <li>a. BV Covid-19 Dashboard</li>
+                                                <li>b. BV Work Analytics</li>
+                                                <li>c. Jot Forms</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </p>
+                                <div class="row">
+                                    <div class="person-content">
+                                        <p>
+                                            • Bengaluru Veeraru team took part in a discussion with the officials of BBMP & Bengaluru City Police to understand all the ground challenges. 
+                                        </p>
+                                        <p>• After the discussion, Bengaluru Veeraru team called out all the NGOs registered in the BV platform for an online meeting in the third week of March and discussed how everyone could join hands and fight the pandemic in Namma Bengaluru.
+                                        </p>
+                                        <p>
+                                            • NGOs voluntarily took up tasks in which they had experience and in-depth knowledge. <br>
+                                            • Today after 50+ days, the BV Team has developed:
+                                            <ul class="needylistg">
+                                                <li>1. Covid19 Dashboard.</li>
+                                                <li>2. 20+ Maps benefiting 26 Police Stations & 44 Wards of BBMP.</li>
+                                                <li>3. 10+ NGOs & Partners.</li>
+                                                <li>4. 300+ Volunteers.</li>
+                                                <li>5. 4765 Kits distributed.</li>
+                                                <li>6. 2 Lakhs+ Life’s Touched.</li>
+                                            </ul>
+                                        </p>
+                                        <p><b>Special thanks to all the NGOs, & Volunteers for their wonderful contribution for a better tomorrow</b></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <h4>Here is the graphical representation of the Ration provided by BV in Bengaluru:</h4>
+                                    <div id="chart_div" class="chart"></div>
+                                    <h5>NOTE: The above mentioned details are Identified and Verified By Bengaluru Veeraru team. We wish to support all
+                                        the remaining people with ration for which we require your support, Please contribute here <a
+                                            href="https://rzp.io/l/lbtcdonate4needy" style="color: red;" title="Donate">DONATE</a></h5>
+                                </div>
+                                <!--====================== Quota ========================-->
+                                
+
+                                <!--======================= Video ========================-->
+                                <div class="tags-title">
+                                    <span class="tags-group"><strong>Tags: </strong>
+                                        <a href="news">NEWS</a>,
+                                        <a href="index">HOME</a>
+                                    </span>
+                                    <div class="social-link">
+                                        <ul>
+                                            <li><a href="https://twitter.com/blr_veeraru" class="circle c-1"><i
+                                                    class="fa fa-twitter"></i></a></li>
+                                            <li><a href="https://www.facebook.com/bengaluruveeraru/" class="circle c-2"><i
+                                                    class="fa fa-facebook"></i></a></li>
+                                            <li><a href="https://instagram.com/bengaluru_veeraru" class="circle c-3"><i
+                                                    class="fa fa-instagram"></i></a></li>
+                                            <!-- <li><a href="https://vimeo.com/" class="circle c-4"><i class="fa fa-youtube"></i></a></li> -->
+                                        </ul>
+                                    </div> <!-- social-link -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--======================= About Author ========================-->
+                        
+
+                        <!--====================== Comments =======================-->
+                        
+
+                        <!--====================== Leave a Reply =======================-->
+                        
+
+                        <!--====================== You May Also Like =======================-->
+                        
+                    </div> <!-- /.post-single -->
+                </div> <!-- /.main-post -->
+            </div> <!-- /.col-lg-8 col-md-8 -->
+
+            <!-- ======================= Sidebar ===================-->
+            <div class="col-lg-4 col-md-5 col-sm-6 right-post-single">
+                <div id="sidebar"></div>
+            </div> <!-- /.col-lg-4 col-md-4 -->
+
+        </div> <!--  /.row -->
+    </div> <!--  /.container -->
+
+
+    <!--======================== Footer =====================-->
+    <div id="footer"></div>
+
+</div> <!--  /.page -->
+
+<!-- JS code -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="assets/js/jquery.spincrement.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/myScript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<div class="menuBar">
+	<nav class="navbar navbar-default ">
+		<div class="container p0">
+			<div class="navbar-header">
+				<div class="logo">
+					<a href="index" class="navbar-brand">
+						<img src="assets/images/logo.png" alt="Homepage logo">
+						
+					</a>
+				</div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#navbar-menu">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="navbar-right">
+
+				<div id="navbar-menu" class="collapse navbar-collapse ">
+					<ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+						<li class="dropdown">
+							<a href="index" 
+							   role="button" aria-expanded="false" title="Home">HOME</a>
+							<!-- <ul class="dropdown-menu" role="menu">
+								<li><a href="index">HOME CHARITY</a></li>
+								<li><a href="ecology">HOME ECOLOGY</a></li>
+								<li><a href="404">404 ERROR PAGE</a></li>
+								<li><a href="login">LOGIN &nbsp;|&nbsp; REGISTER</a></li>
+							</ul> -->
+						</li>
+						
+                        <li>
+                            <a href="partners"
+                               role="button" aria-expanded="false" title="PARTNERS">PARTNERS</a>
+                            <!-- <ul class="dropdown-menu" role="menu">
+                                <li><a href="features" >FEATURES PAGE</a></li>
+                                <li><a href="partners" >partners PAGE</a></li>
+                            </ul> -->
+
+						</li>
+						<li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown"
+                               role="button" aria-expanded="false" title="COVID Work">COVID WORK</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="tcindia" >Covid Test Centers in India</a></li>
+                                <li><a href="tckarnataka" >Covid Test Centers in Karnataka</a></li>
+                                <li><a href="ourwork/index.html">COVID WORK</a></li>
+                            </ul>
+
+                        </li>
+						<!-- <li><a href="404" class="about-us" title="About us">ABOUT US</a></li> -->
+						<li>
+							<a href="/covid19/index" 
+							   role="button" aria-expanded="false" title="COVID Dashboard">COVID DASHBOARD</a>
+							<!-- <ul class="dropdown-menu" role="menu">
+								<li><a href="our-causes">OUR CAUSES LIST</a></li>
+								<li><a href="our-causes-2-columns">OUR CAUSES 2 COLUMNS</a></li>
+								<li><a href="our-causes-3-columns">OUR CAUSES 3 COLUMNS</a></li>
+                                <li><a href="single-causes">SINGLE CAUSES</a></li>
+                            </ul> -->
+						</li>
+						<li>
+							<a href="news"
+							   role="button" aria-expanded="false" title="News">NEWS</a>
+							 <!-- <ul class="dropdown-menu" role="menu">
+								<li><a href="news">NEWS LIST</a></li>
+								<li><a href="news-2-columns">NEWS 2 COLUMNS</a></li>
+								<li><a href="news-3-columns">NEWS 3 COLUMNS</a></li>
+								<li><a href="blog-single">SINGLE POST</a></li>
+							</ul> -->
+						</li>
+						<li class="last"><a href="contact" class="contact" title="Contact">CONTACT</a></li>
+						<li class="last"><a href="https://rzp.io/l/lbtcdonate4needy" target="_blank" class="contact" title="Donate">DONATE</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+</div>
+<!-- class="dropdown"
+class="dropdown features-menu" -->
+<script>
+    "use strict";
+    // ===================== Menu Bar ======================
+     $(document).ready(function(){
+    var pathname = window.location.pathname;
+    var page = pathname.split(/[/ ]+/).pop();
+    var menuItems = $('#navbar-menu a');
+    menuItems.each(function(){
+        var mi = $(this);
+        var miHrefs = mi.attr("href");
+        var miParents = mi.parents('li');
+        if(page == miHrefs) {
+            miParents.addClass("active").siblings().removeClass('active');
+        }
+    });
+     });
+</script>
+
